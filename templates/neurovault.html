@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+<title>NeuroVault Tagged Contrasts</title>
+{% endblock %}
+{% block content %}
+        <!-- if it's an iframe embed, only content in here will show -->
+        <div class="main-content">
+            <div class="intro">
+                <h1 class="franklin">Looking for task fMRI?</h1>
+                <p class="body"><a href="http://www.neurovault.org">NeuroVault </a>has over 700 images with tasks and contrasts defined! Explore the possibilites...</p>
+                <p>By the Poldracklab <span class="right">Stanford University</span></p>
+            </div>
+
+            <p class="franklin grey"><i class="fa fa-hand-o-up"></i> Hover on an task name to see its contrasts, and a link to be taken to the image.<span class="noframe"> Or, <a href="/static/data/contrasts_nv.json">download</a> a json file with all the data to use programatically.</span></p>
+            <div id="game" class="cf">
+
+{% for name,contrast,task,url,color,thumbnail in context %}
+<div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:{{ color }}">
+                    <div class="content">
+                        <h5 class="franklin">{{ task }}</h5>
+                        <h6>{{name}}</h6>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><img id="thumbnail" src="{{ thumbnail }}"/><strong></strong><br><br></span> contrast {{ contrast }} <span><br><a href="{{ url }}" target="_blank">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endfor %}
+            <div class="frame-button"></div>
+                
+            </div>
+{% endblock %}

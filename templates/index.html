@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+{% block content %}
+
+
+  <div class="main-content">
+            <div class="intro">
+                <h1 class="franklin">Visualization Playground</h1>
+                <p class="body"><a href="http://www.github.com/vsoch/pybraincompare">Pybraincompare </a>can do cool stuff with brain images. Explore the possibilites...</p>
+                <p>By the Poldracklab <span class="right">Stanford University</span></p>
+            </div>
+
+            <p class="franklin grey"><i class="fa fa-hand-o-up"></i> Hover on an task name to see its contrasts, and a link to be taken to the image.<span class="noframe"> Or, <a href="/static/data/contrasts_nv.json">download</a> a json file with all the data to use programatically.</span></p>
+
+<!-- NeuroVault Contrasts -->
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:#CC3366">
+                    <div class="content">
+                        <h5 class="franklin">NeuroVault Contrasts</h5>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><strong></strong><br><br></span><span><br><a href="/neurovault">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Atlas Generation -->
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:#CC3366">
+                    <div class="content">
+                        <h5 class="franklin">Atlas SVG Generation</h5>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><strong></strong><br><br></span><span><br><a href="/atlas">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Histogram -->
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:#CC3366">
+                    <div class="content">
+                        <h5 class="franklin">Histogram</h5>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><strong></strong><br><br></span><span><br><a href="/histogram">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Quality Analysis -->
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:#CC3366">
+                    <div class="content">
+                        <h5 class="franklin">Quality Analysis</h5>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><strong></strong><br><br></span><span><br><a href="http://www.vbmis.com/bmi/project/qa" target="_blank">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Ontology Structure -->
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front" style="background-color:#CC3366">
+                    <div class="content">
+                        <h5 class="franklin">Ontology Structure</h5>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p class="franklin"><span class="highlight" style="background-color:rgba(241, 197, 66, 1.0)"><strong></strong><br><br></span><span><br><a href="http://www.vbmis.com/bmi/project/qa" target="_blank">link</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+            <div class="frame-button"></div>
+                
+            </div>
+{% endblock %}
